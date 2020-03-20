@@ -4,50 +4,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Coronavirus by Google Trends">
+  <meta name="description" content="Coronavirus Trends">
   <meta name="author" content="DarkDiamonD">
   <title>Coronavirus - Google Trends</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <!-- Favicons -->
-  <!-- <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c"> -->
-
   <link href="css/main.css" rel="stylesheet">
   <link href="css/countrySelect.min.css" rel="stylesheet">
 
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TCG36CW');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCG36CW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Coronavirus Trends</a>
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-
     <input type="text" id="country" class="form-control mr-sm-2" onchange="ChangeCountry();">
-    <!-- <div class="collapse navbar-collapse" id="navbarsExampleDefault"> -->
-
-      <!-- <form class="form-inline my-2 my-lg-0"> -->
-      <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
-      <!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> -->
-      <!-- <input type="hidden" id="country_code" /> -->
-
-      <!-- </form> -->
-    <!-- </div> -->
   </nav>
-  <main role="main" class="container">
 
+  <main role="main" class="container">
     <div class="starter-template">
       <h1>Coronoavirus - Search Trends</h1>
       <p class="lead"></p>
@@ -69,16 +66,9 @@
       <div id="hour-trends"></div>
     </div>
 
-    <!-- <div class="row">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
-          mostly barebones HTML document.</p>
-        <div id="hour-trends"></div>
-      </div> -->
-
   </main><!-- /.container -->
-
 </body>
+
 <!-- Footer section -->
 <footer class="site-footer navbar-dark">
   <div class="container">
@@ -104,7 +94,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
   integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
-
 
 <script src="https://ssl.gstatic.com/trends_nrtr/2152_RC02/embed_loader.js"></script>
 <script src="js/countrySelect.min.js"></script>
