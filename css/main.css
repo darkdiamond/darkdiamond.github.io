@@ -13,3 +13,32 @@ body {
     height: auto;
     display: block;
 } */
+
+/* 
+* 7.0 Site-footer
+*/
+
+.site-footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.site-footer .site-info {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.site-footer .site-info a {
+    color: #fff;
+}
+
+.site-footer .social-block li a {
+    color: #fff;
+}
+
+.site-footer .social-block li a:hover,
+.site-footer .social-block li a:focus {
+    opacity: 0.8;
+}

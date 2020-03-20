@@ -72,7 +72,7 @@ function start_graphs(GEO) {
         "comparisonItem": [{
             "keyword": trends_key,
             "geo": GEO,
-            "time": trends_time
+            "time": "now 4-H"
         }],
         "category": 0,
         "property": ""
